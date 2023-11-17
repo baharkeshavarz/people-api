@@ -2,6 +2,7 @@
 
 import Button from "@/components/Button";
 import EmptyState from "@/components/EmptyState";
+import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react"
 
@@ -11,6 +12,8 @@ interface ErrorStateProps {
 
 const ErrorState: React.FC<ErrorStateProps> = ({ error }) => {
   const router = useRouter(); 
+  const t = useTranslations('Index');
+
   useEffect(() => {
     // Do sth like logging
      console.log(error);
@@ -20,11 +23,11 @@ const ErrorState: React.FC<ErrorStateProps> = ({ error }) => {
      <div className="flex flex-col justify-center items-center gap-3">
         <EmptyState
           title="Oh Oh"
-          subtitle="Something went wrong!"
+          subtitle={t('errorMsg')}
         />
         <div className="w-48">
              <Button 
-                label="Load again"
+                label={t("load")}
                 outline
                 onClick={() => router.push("/users")}
             />

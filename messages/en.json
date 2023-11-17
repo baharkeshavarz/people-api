@@ -1,9 +1,17 @@
 {
     "Index": {
-      "title": "years old",
-      "select": "Select a language",
-      "language-one": "english",
-      "language-two": "french",
-      "locale": "{locale, select, fr {French} en {English} other {Unknown}}"
+      "usersHeader": "Users List",
+      "age": "years old",
+      "errorMsg": "Something went wrong!",
+      "load": "Load again",
+      "heroTitle": "What is Lorem Ipsum?",
+      "heroDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s.",
+      "heroLink": "Learn More",
+      "menuAbout": "About us",
+      "menuContact": "Contact us",
+      "menuUsers": "Users",
+      "menuCompany": "Company",      "language-one": "english",
+      "language-two": "german",
+      "locale": "{locale, select, de {German} en {English} other {Unknown}}"
     }
   }

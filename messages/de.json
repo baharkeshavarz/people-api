@@ -1,0 +1,18 @@
+{
+    "Index": {
+      "usersHeader": "Benutzerliste",
+      "age": "Jahre alt",
+      "errorMsg": "Etwas ist schief gelaufen!",
+      "load": "Laden Sie erneut",
+      "heroTitle": "Was ist Lorem Ipsum?",
+      "heroDescription": "Lorem Ipsum ist lediglich ein Blindtext der Druck- und Satzindustrie. Lorem Ipsum ist seit dem 15. Jahrhundert der branchenübliche Blindtext.",
+      "heroLink": "Erfahren Sie mehr",
+      "menuAbout": "Über uns",
+      "menuContact": "MenüKontakt",
+      "menuUsers": "Benutzer",
+      "menuCompany": "Unternehmen",
+      "language-one": "Englisch",
+      "language-two": "German",
+      "locale": "{locale, select, de {German} en {English} other {Inconnu}}"
+    }
+  }

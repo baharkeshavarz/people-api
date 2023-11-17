@@ -1,7 +1,9 @@
 import Image from "next/image"
 import SelectLanguage from "./SelectLanguage"
+import { useTranslations } from "next-intl";
 
 const NavBar = () => {
+  const t = useTranslations('Index');
   return (
      <header className="relative z-10">
       <nav aria-label="Top">
@@ -24,10 +26,10 @@ const NavBar = () => {
                 <div className="hidden h-full lg:flex">
                   <div className="inset-x-0 bottom-0 px-4">
                     <div className="flex h-full justify-center space-x-8">
-                      <a href="#" className="flex items-center text-sm font-medium text-white">About us</a>
-                      <a href="#" className="flex items-center text-sm font-medium text-white">Company</a>
-                      <a href="#" className="flex items-center text-sm font-medium text-white">Contact us</a>
-                      <a href="/users" className="flex items-center text-sm font-medium text-white">Users</a>
+                      <a href="#" className="flex items-center text-sm font-medium text-white">{t('menuAbout')}</a>
+                      <a href="#" className="flex items-center text-sm font-medium text-white">{t('menuContact')}</a>
+                      <a href="#" className="flex items-center text-sm font-medium text-white">{t('menuCompany')}</a>
+                      <a href="/users" className="flex items-center text-sm font-medium text-white">{t('menuUsers')}</a>
                       <SelectLanguage/>
                     </div>
                   </div>

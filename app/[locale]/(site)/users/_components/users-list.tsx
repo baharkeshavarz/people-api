@@ -20,7 +20,7 @@ export default function UsersList() {
       <div className="border-b py-1 flex items-center">
            <HiArrowRightCircle className="w-6 h-6" />
           <p className="text-grey-800 font-bold text-xl">
-            { t('Users List') }
+            {t('usersHeader')}
           </p>
       </div>
       <div className="bg-white w-full rounded-md pt-4">

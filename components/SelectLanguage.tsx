@@ -27,8 +27,8 @@ return (
               defaultValue={locale}
               onChange={handleSelect} 
               className='bg-black text-white rounded py-1 px-2 outline-none'>
-            {['en', 'fr'].map((cur) => (
-               <option key={cur} value={cur}>
+              {['en', 'de'].map((cur) => (
+                 <option key={cur} value={cur}>
               {t('locale', {locale: cur})}
             </option>
           ))}
