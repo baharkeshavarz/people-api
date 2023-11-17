@@ -1,6 +1,7 @@
 import Image from "next/image"
 import SelectLanguage from "./SelectLanguage"
 import { useTranslations } from "next-intl";
+import Link from "next/link"
 
 const NavBar = () => {
   const t = useTranslations('Index');
@@ -12,7 +13,7 @@ const NavBar = () => {
             <div>
               <div className="flex h-16 items-center justify-between">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center">
-                  <a href="/">
+                  <Link href="/">
                     <span className="sr-only">My Company</span>
                     <div className="h-12 w-12 relative">
                     <Image
@@ -21,15 +22,15 @@ const NavBar = () => {
                        fill
                     />
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="hidden h-full lg:flex">
                   <div className="inset-x-0 bottom-0 px-4">
                     <div className="flex h-full justify-center space-x-8">
-                      <a href="#" className="flex items-center text-sm font-medium text-white">{t('menuAbout')}</a>
-                      <a href="#" className="flex items-center text-sm font-medium text-white">{t('menuContact')}</a>
-                      <a href="#" className="flex items-center text-sm font-medium text-white">{t('menuCompany')}</a>
-                      <a href="/users" className="flex items-center text-sm font-medium text-white">{t('menuUsers')}</a>
+                      <Link href="#" className="flex items-center text-sm font-medium text-white">{t('menuAbout')}</Link>
+                      <Link href="#" className="flex items-center text-sm font-medium text-white">{t('menuContact')}</Link>
+                      <Link href="#" className="flex items-center text-sm font-medium text-white">{t('menuCompany')}</Link>
+                      <Link href="/users" className="flex items-center text-sm font-medium text-white">{t('menuUsers')}</Link>
                       <SelectLanguage/>
                     </div>
                   </div>
@@ -51,7 +52,7 @@ const NavBar = () => {
                   </a>
                 </div>
 
-                <a href="#" className="lg:hidden">
+                <Link href="#" className="lg:hidden">
                   <span className="sr-only">My Company</span>
                   <Image 
                      src="/logo.png" 
@@ -59,7 +60,7 @@ const NavBar = () => {
                      className="h-8 w-12" 
                      fill
                   />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,8 +1,8 @@
-import Loader from "@/components/Loader";
+import Loader from "@/app/components/Loader";
 import ListUsers from "./_components/users-list";
 import { Suspense } from "react";
 
-export default async function Page() {
+const Page = async () => {
   return (
     <div className="w-full flex items-center justify-center">
       <Suspense fallback={<Loader/>}>
@@ -11,3 +11,4 @@ export default async function Page() {
     </div>
   );
 }
+export default Page;

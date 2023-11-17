@@ -1,7 +1,7 @@
 "use client"
 
-import Button from "@/components/Button";
-import EmptyState from "@/components/EmptyState";
+import Button from "@/app/components/Button";
+import EmptyState from "@/app/components/EmptyState";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react"
@@ -13,6 +13,11 @@ interface ErrorStateProps {
 const ErrorState: React.FC<ErrorStateProps> = ({ error }) => {
   const router = useRouter(); 
   const t = useTranslations('Index');
+
+  // Force refresh the page
+  const handleReload = () => {
+    router.refresh();
+ };
 
   useEffect(() => {
     // Do sth like logging
@@ -29,7 +34,7 @@ const ErrorState: React.FC<ErrorStateProps> = ({ error }) => {
              <Button 
                 label={t("load")}
                 outline
-                onClick={() => router.push("/users")}
+                onClick={handleReload}
             />
         </div>
      </div>

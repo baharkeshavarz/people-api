@@ -26,6 +26,7 @@ const Button: React.FC<ButtonProps> = ({
            disabled:cursor-not-allowed
            w-full
            relative
+           hover:bg-gray-100
            ${small ? "py-1" : "py-3"}
            ${small ? "text-sm" : "text-base"}
            ${small ? "border" : "border-2"}

@@ -15,10 +15,11 @@
     "@tanstack/react-query-devtools": "^5.8.4",
     "@tanstack/react-query-next-experimental": "^5.8.4",
     "axios": "^1.6.2",
-    "next": "13.5.4",
+    "next": "^13.5.4",
     "next-intl": "^3.0.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-i18next": "^13.5.0",
     "react-icons": "^4.12.0",
     "react-spinners": "^0.13.8"
   },

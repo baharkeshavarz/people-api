@@ -16,12 +16,15 @@ export const UserCard = ({ user }: UserCardProps) => {
         <h2 className="text-2xl font-bold text-gray-800 mb-4"> 
            {user.names}
         </h2>
-        <p className="text-2xl font-bold text-gray-800 mb-6"> {user.age} {t('age')}</p>
+        <p className="text-2xl font-bold text-gray-800 mb-6"> 
+          {user.age} {t('age')}
+        </p>
       </div>
       <div className="p-4">
-        <button
-           className="w-full bg-blue-500 text-white rounded-lg px-4 py-2 hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
-           Select User
+         <button
+           className="w-full bg-indigo-600 text-white rounded-lg px-4 py-2 hover:bg-indigo-700 focus:outline-none focus:shadow-outline-blue active:bg-indigo-800"
+           >
+            Select User
         </button>
       </div>
     </div>

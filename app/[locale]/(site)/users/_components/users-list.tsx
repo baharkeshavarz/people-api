@@ -12,14 +12,14 @@ export default function UsersList() {
   const { data } = useQuery({
     queryKey: ['users'],
     queryFn: getUsers,
-    staleTime: 5,
+    staleTime: 1,
   })
   const t = useTranslations('Index');
   return (
     <div className="flex flex-col w-full px-12">
       <div className="border-b py-1 flex items-center">
            <HiArrowRightCircle className="w-6 h-6" />
-          <p className="text-grey-800 font-bold text-xl">
+          <p className="text-grey-700 font-bold text-lg italic">
             {t('usersHeader')}
           </p>
       </div>

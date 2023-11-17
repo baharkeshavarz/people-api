@@ -7,7 +7,9 @@
     "next",
     "plugin:prettier/recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "prettier",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "plugins": [
@@ -17,9 +19,9 @@
   "rules": {
     "@typescript-eslint/no-explicit-any": "off",
     "no-empty-function": "error",
-    //"@typescript-eslint/no-empty-function": "error",
+  //  "@typescript-eslint/no-empty-function": "error",
     "prettier/prettier": "off",
     "no-unused-vars": "warn"
-    //"no-console": 1
+    // "no-console": 1
   }
 }

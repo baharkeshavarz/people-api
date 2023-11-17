@@ -1,7 +1,7 @@
-import Banner from "@/components/Banner";
-import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
-import NavBar from "@/components/NavBar";
+import Banner from "@/app/components/Banner";
+import Footer from "@/app/components/Footer";
+import Hero from "@/app/components/Hero";
+import NavBar from "@/app/components/NavBar";
 
 interface LayoutProps {
   children:React.ReactNode,
