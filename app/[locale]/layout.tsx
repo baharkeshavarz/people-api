@@ -1,9 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { notFound } from 'next/navigation';
-import { NextIntlClientProvider } from 'next-intl';
-import SelectLanguage from '@/components/SelectLanguage';
+import {notFound} from 'next/navigation';
+import {NextIntlClientProvider} from 'next-intl';
 import TanstackProvider from '@/utils/tanstack-provider';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -30,15 +29,13 @@ export default async function RootLayout({
   } catch (error) {
     notFound();
   }
-  
   return (
     <html lang={locale}>
       <body className={inter.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-            <TanstackProvider>
-                <SelectLanguage/>
-                {children}
-           </TanstackProvider>
+           <TanstackProvider>
+              {children}
+          </TanstackProvider>
         </NextIntlClientProvider>
       </body>
     </html>

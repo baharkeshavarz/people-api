@@ -14,26 +14,27 @@ const SelectLanguage = () => {
     const handleSelect = (e : React.ChangeEvent<HTMLSelectElement>) => {
       const lang = e.target.value;
       const url = pathname.replace(locale, lang)
+
       startTransition(() => {
         router.push(url)
       });
     }
 
-  return (
+return (
     <>
      <select 
               name="language" 
               id="language" 
               defaultValue={locale}
               onChange={handleSelect} 
-              className="bg-black text-white rounded py-1 px-2 outline-none"
-          >
+              className='bg-black text-white rounded py-1 px-2 outline-none'>
+           
             {['en', 'fr'].map((cur) => (
                <option key={cur} value={cur}>
               {t('locale', {locale: cur})}
             </option>
           ))}
-    </select>
+     </select>
     </>
   )
 }
