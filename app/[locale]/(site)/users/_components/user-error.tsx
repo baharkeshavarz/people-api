@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react"
 
 interface ErrorStateProps {
-    error: Error,
+    error?: Error,
 }
 
 const ErrorState: React.FC<ErrorStateProps> = ({ error }) => {
