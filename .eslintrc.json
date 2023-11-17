@@ -1,3 +1,25 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "next",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-empty-function": "error",
+    //"@typescript-eslint/no-empty-function": "error",
+    "prettier/prettier": "off",
+    "no-unused-vars": "warn"
+    //"no-console": 1
+  }
 }
