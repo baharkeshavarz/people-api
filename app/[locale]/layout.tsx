@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import SelectLanguage from '@/components/SelectLanguage';
+import TanstackProvider from '@/utils/tanstack-provider';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -34,8 +35,10 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={inter.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-              <SelectLanguage/>
-              {children}
+            <TanstackProvider>
+                <SelectLanguage/>
+                {children}
+           </TanstackProvider>
         </NextIntlClientProvider>
       </body>
     </html>
