@@ -1,0 +1,9 @@
+{
+    "Index": {
+      "title": "years old",
+      "select": "Select a language",
+      "language-one": "english",
+      "language-two": "french",
+      "locale": "{locale, select, fr {French} en {English} other {Unknown}}"
+    }
+  }
